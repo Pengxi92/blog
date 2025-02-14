@@ -32,14 +32,13 @@
 
   1. 客户端发出 https 请求，请求服务端建立 SSL 连接
   2. 服务端收到 https 请求，申请或自制数字证书，得到公钥和服务端私钥，并将公钥发送给客户端
-  3. 户端验证公钥，不通过验证则发出警告，通过验证则产生一个随机的客户端私钥
+  3. 客户端验证公钥，不通过验证则发出警告，通过验证则产生一个随机的客户端私钥
   4. 客户端将公钥与客户端私钥进行对称加密后传给服务端
   5. 服务端收到加密内容后，通过服务端私钥进行非对称解密，得到客户端私钥
   6. 服务端将客户端私钥和内容进行对称加密，并将加密内容发送给客户端
   7. 客户端收到加密内容后，通过客户端私钥进行对称解密，得到内容
 
-> [前端基础篇之 HTTP 协议](https://juejin.cn/post/6844903844216832007)<br>
-> [（建议精读）HTTP 灵魂之问，巩固你的 HTTP 知识体系](https://juejin.cn/post/6844904100035821575)<br>
+> [前端基础篇之 HTTP 协议](https://juejin.cn/post/6844903844216832007)<br> > [（建议精读）HTTP 灵魂之问，巩固你的 HTTP 知识体系](https://juejin.cn/post/6844904100035821575)<br>
 
 # HTTP 基础
 
@@ -144,8 +143,7 @@ CDN 全称 Content Delivery Network，即内容分发网络。其基本思路是
 - localStorage
 - sessionStorage
 
-> [这一次带你彻底了解前端本地存储](https://www.cnblogs.com/songyao666/p/15492313.html)<br>
-> [放弃 localStorage,拥抱 IndexedDB](https://zhuanlan.zhihu.com/p/95076534)
+> [这一次带你彻底了解前端本地存储](https://www.cnblogs.com/songyao666/p/15492313.html)<br> > [放弃 localStorage,拥抱 IndexedDB](https://zhuanlan.zhihu.com/p/95076534)
 
 ## cookie 属性
 
@@ -179,8 +177,7 @@ CDN 全称 Content Delivery Network，即内容分发网络。其基本思路是
 
 - ETag 和 If-None-Match，当前资源文件的一个唯一标识(由服务器生成)
 
-> [HTTP 缓存别再乱用了！推荐一个缓存设置的最佳姿势！](https://mp.weixin.qq.com/s/43pa04szJ2zU_IyVP4LraQ)<br>
-> [深入理解浏览器的缓存机制](https://www.jianshu.com/p/54cc04190252)
+> [HTTP 缓存别再乱用了！推荐一个缓存设置的最佳姿势！](https://mp.weixin.qq.com/s/43pa04szJ2zU_IyVP4LraQ)<br> > [深入理解浏览器的缓存机制](https://www.jianshu.com/p/54cc04190252)
 
 # WebSocket
 
