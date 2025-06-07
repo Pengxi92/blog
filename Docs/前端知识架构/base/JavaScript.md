@@ -1,7 +1,7 @@
 # 数据类型
 
 - 基本类型
-  字符串（String）、数字(Number)、布尔(Boolean)、对空（Null）、未定义（Undefined）、Symbol。
+  字符串（String）、数字(Number)、大数字（BigInt）、布尔(Boolean)、对空（Null）、未定义（Undefined）、Symbol。
   占据固定大小，保存在栈内存中。
 
 - 引用数据类型
@@ -15,8 +15,7 @@
 - 同种类型数据的数组分配连续的内存空间
 - 存在非同种类型数据的数组使用哈希映射分配内存空间
 
-> [ziyi2/data-structure-algorithm-procedure](https://github.com/ziyi2/data-structure-algorithm-procedure/blob/master/src/Hash.js)<br>
-> [浅谈 JS 内存机制](https://mp.weixin.qq.com/s/dtEciFpNSrPGR63aScaoww)
+> [ziyi2/data-structure-algorithm-procedure](https://github.com/ziyi2/data-structure-algorithm-procedure/blob/master/src/Hash.js)<br> > [浅谈 JS 内存机制](https://mp.weixin.qq.com/s/dtEciFpNSrPGR63aScaoww)
 
 ## 数据类型的判断
 
@@ -91,8 +90,7 @@ descriptor，要定义或修改的属性描述符。包含以下两大类：
 - 寄生组合式继承
 - Class（ES6 的方案）
 
-> [js 类和继承](https://github.com/ziyi2/js/blob/master/JS%E7%B1%BB%E5%92%8C%E7%BB%A7%E6%89%BF.md)<br>
-> [js 寄生组合式继承](https://blog.csdn.net/qq_26222859/article/details/77508778)
+> [js 类和继承](https://github.com/ziyi2/js/blob/master/JS%E7%B1%BB%E5%92%8C%E7%BB%A7%E6%89%BF.md)<br> > [js 寄生组合式继承](https://blog.csdn.net/qq_26222859/article/details/77508778)
 
 ## 函数相关
 
@@ -110,8 +108,7 @@ descriptor，要定义或修改的属性描述符。包含以下两大类：
 - call、apply、bind
 - ...
 
-> [前端算法入门一：刷算法题常用的 JS 基础扫盲](https://juejin.cn/post/7087134135193436197)<br>
-> [解锁多种 JavaScript 数组去重姿势](https://juejin.cn/post/6844903608467587085)
+> [前端算法入门一：刷算法题常用的 JS 基础扫盲](https://juejin.cn/post/7087134135193436197)<br> > [解锁多种 JavaScript 数组去重姿势](https://juejin.cn/post/6844903608467587085)
 
 ## 性能差异
 
