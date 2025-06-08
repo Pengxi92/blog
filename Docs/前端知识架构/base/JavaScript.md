@@ -192,3 +192,16 @@ JS 把堆空间分成新生代和老生代两个区域，新生代中存放的�
 ## PWA 和 Service Worker
 
 > [面试官：请你实现一个 PWA 我：😭](https://juejin.cn/post/6844904052166230030)
+
+## fetch 请求
+
+Fetch 函数就是原生 js、没有使用 XMLHttpRequest 对象、头部信息、请求信息、响应信息等均分布到不同的对象
+
+fetch()方法返回一个 Promise 解析 Response 来自 Request 显示状态
+
+### 相比于 XMLHttpRequest 对象的优点
+
+- XMLHttpRequest 所有的功能全部集中在一个对象上, 容易书写出混乱而且不容易维护的代码
+- 能适配新的 Promise API
+- 精细的功能分割: 头部信息, 请求信息, 响应信息等均分布到不同的对象, 更利于处理各种复杂的数据交互场景
+- 同源请求也可以自定义不带 cookie，某些服务不需要 cookie 场景下能少些流量
