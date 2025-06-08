@@ -37,14 +37,6 @@
 
 ## Object
 
-### Map 和 Object 的差异性
-
-1. 键的类型：Object 中键的类型只能是字符串，符号，整数，在 Map 中键的类型可以是任何类型的值，包括对象
-2. 插入顺序：在 Map 中，键的插入顺序会被保留
-3. 大小：Map 可以用 size 属性来获取，Object 只能手动计算
-4. 迭代：Map 有 iterator，支持 for of 循环和 forEach，Object 只能有 for in，并且需要判断属性是否是自身属性而不是继承属性
-5. 性能：在频繁增删键值对的场景下，Map 的性能更好
-
 ### Object.defineProperty()
 
 > [Object.defineProperty()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)方法会直接在一个对象上定义一个新属性，或者修改一个对象的现有属性，并返回此对象。
@@ -76,6 +68,14 @@ descriptor，要定义或修改的属性描述符。包含以下两大类：
 - Reflect.ownKeys() 返回 自身的 所有的不管是不是可枚举的，也不管是不是 symbol 的，都可以遍历得到
 
 > [对象属性的遍历方法(最全)](https://blog.csdn.net/qq_48386796/article/details/117334476)
+
+### Map 和 Object 的差异性
+
+1. 键的类型：Object 中键的类型只能是字符串，符号，整数，在 Map 中键的类型可以是任何类型的值，包括对象
+2. 插入顺序：在 Map 中，键的插入顺序会被保留
+3. 大小：Map 可以用 size 属性来获取，Object 只能手动计算
+4. 迭代：Map 有 iterator，支持 for of 循环和 forEach，Object 只能有 for in，并且需要判断属性是否是自身属性而不是继承属性
+5. 性能：在频繁增删键值对的场景下，Map 的性能更好
 
 ### 原型链
 
