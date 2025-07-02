@@ -8,3 +8,42 @@ LRU 算法的核心思想是，当缓存空间不足时，优先淘汰最近最�
 
 优点：能够保证缓存中的数据都是热点数据，也就是最近被访问的数据，因此可以有效地提高缓存命中率。
 缺点：实现较为复杂，需要维护一个有序的缓存列表，并且每次访问数据都需要更新列表，对性能有一定的影响。
+
+lru 缓存：
+1、大小为 n，最近使用(包括 set、get)的放在最前，超过则删除最后的
+2、提供 set、get 方法
+
+```
+class LRU {
+  this.limit = 0;
+  this.cache = new Map();
+  super(limit) {
+    this.limit = limit
+  }
+
+  set(key, value) {
+    if (this.cache.size() === this.limit) {
+      ; Array.form(this.cache)[0]
+      // 删除
+      const key = this.cache.next().value
+      this.cache.del(key)
+    }
+    this.cache.set(key, value)
+  }
+
+  get(key) {
+    if (this.cache.has(key)) {
+
+      const resValue = this.cache.get(key)
+
+      this.cache.del(key)
+      this.cache.set(key, resValue)
+
+      return resValue
+    } else {
+      return null
+    }
+  }
+}
+
+```
